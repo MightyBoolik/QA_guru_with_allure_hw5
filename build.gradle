@@ -14,12 +14,15 @@ allure {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+    version = "1.8"
 }
+
+
 repositories {
     mavenCentral()
 }
 dependencies {
-    testImplementation"io.qameta.allure:allure-java-commons 2.13.8"
+    testImplementation"io.qameta.allure:allure-java-commons:2.13.8"
     testImplementation "com.github.javafaker:javafaker:1.0.2"
     testImplementation "com.codeborne:selenide:5.18.0"
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"
